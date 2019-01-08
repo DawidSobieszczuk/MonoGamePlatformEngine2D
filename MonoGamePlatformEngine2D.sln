@@ -3,7 +3,44 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameWindows", "MonoGameWindows\MonoGameWindows.csproj", "{AAC4DA7B-C150-4F3B-90ED-D721CDCF2CBD}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Engine", "Engine\Engine.shproj", "{30E81471-DC54-41AE-AF43-7DF20AF80966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameAndroid", "MonoGameAndroid\MonoGameAndroid.csproj", "{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Engine\Engine.projitems*{30e81471-dc54-41ae-af43-7df20af80966}*SharedItemsImports = 13
+		Engine\Engine.projitems*{aac4da7b-c150-4f3b-90ed-d721cdcf2cbd}*SharedItemsImports = 4
+		Engine\Engine.projitems*{db81f70d-b36d-4a2c-9fdf-bfabc9c998aa}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAC4DA7B-C150-4F3B-90ED-D721CDCF2CBD}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{AAC4DA7B-C150-4F3B-90ED-D721CDCF2CBD}.Debug|x86.ActiveCfg = Debug|x86
+		{AAC4DA7B-C150-4F3B-90ED-D721CDCF2CBD}.Debug|x86.Build.0 = Debug|x86
+		{AAC4DA7B-C150-4F3B-90ED-D721CDCF2CBD}.Release|Any CPU.ActiveCfg = Release|x86
+		{AAC4DA7B-C150-4F3B-90ED-D721CDCF2CBD}.Release|x86.ActiveCfg = Release|x86
+		{AAC4DA7B-C150-4F3B-90ED-D721CDCF2CBD}.Release|x86.Build.0 = Release|x86
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Debug|x86.Build.0 = Debug|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Debug|x86.Deploy.0 = Debug|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Release|x86.ActiveCfg = Release|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Release|x86.Build.0 = Release|Any CPU
+		{DB81F70D-B36D-4A2C-9FDF-BFABC9C998AA}.Release|x86.Deploy.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
