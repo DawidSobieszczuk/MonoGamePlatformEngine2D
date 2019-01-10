@@ -2,5 +2,9 @@
 
 namespace Engine {
     class MainGame : Game {
+
+        public MainGame () {
+            
+        }
     }
 }
