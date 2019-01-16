@@ -9,6 +9,11 @@
     <Import_RootNamespace>Engine</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Assets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\PositionComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Components\RendererComponent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Extensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Systems\RenderSystem.cs" />
   </ItemGroup>
 </Project>
