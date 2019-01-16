@@ -2,9 +2,11 @@
 
 ## ToDo:
 #### Systems
-- [ ] RenderSystem
-- [ ] InputSystem
+- [x] RenderSystem
 - [ ] PhysicsSystem
 
 #### Entities
 - [ ] Player
+
+
+- [ ] InputManager
