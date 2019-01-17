@@ -11,9 +11,8 @@ namespace MonoGameWindows {
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
-        {
-            using (var game = new Engine.MainGame())
+        static void Main() { 
+            using (var game = new MainGameWindows())
                 game.Run();
         }
     }
