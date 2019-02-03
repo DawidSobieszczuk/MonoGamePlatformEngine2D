@@ -1,5 +1,7 @@
 ﻿using ECS;
 using Engine.Components;
+using Engine.Input;
+using Engine.Input.Touch;
 using Engine.Systems;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -11,10 +13,10 @@ using Newtonsoft.Json;
 using System.IO;
 
 namespace Engine {
-    class MainGame : Game {
+    public class MainGame : Game {
         public static MainGame Instance { get; private set; }
 
-        public World CurrentWorld { get; set; }
+        public World CurrentWorld { get; set; } = new World();
 
         public Camera2D MainCamera { get; private set; }
         public SpriteBatch SpriteBatch { get; private set; }
@@ -37,7 +39,7 @@ namespace Engine {
         }
 
         protected override void Initialize() {
-            
+            InputManager.Update();
             base.Initialize();
         }
 
@@ -51,7 +53,10 @@ namespace Engine {
 
         protected override void Update(GameTime gameTime) {
             CurrentWorld.Update(0); // TODO: delta
+            InputManager.Update();
+            TouchManager.Update();
             base.Update(gameTime);
+            
         }
         protected override void Draw(GameTime gameTime) {
             GraphicsDevice.Clear(Color.Black);

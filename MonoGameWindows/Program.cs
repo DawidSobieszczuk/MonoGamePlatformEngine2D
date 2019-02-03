@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace MonoGameWindows {
 #if WINDOWS || LINUX
@@ -11,7 +13,7 @@ namespace MonoGameWindows {
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main() { 
+        static void Main() {
             using (var game = new MainGameWindows())
                 game.Run();
         }

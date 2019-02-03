@@ -15,7 +15,7 @@ namespace Engine.Components {
         [JsonIgnore()]
         public TiledMap TiledMap { get => MainGame.Instance.Assets.Get<TiledMap>(TiledMapName); set => MainGame.Instance.Assets.GetName(value); }
 
-        public string SpriteName;
-        public string TiledMapName;
+        public string SpriteName = null;
+        public string TiledMapName = null;
     }
 }

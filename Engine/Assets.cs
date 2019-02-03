@@ -8,7 +8,7 @@ namespace Engine {
     /// <summary>
     /// Przechowuje wszyskie asssety. Wczytaj asssety przed inicjalizacją świata
     /// </summary>
-    class Assets {
+    public class Assets {
         ContentManager _content;
         Dictionary<string, object> _assets;
 
